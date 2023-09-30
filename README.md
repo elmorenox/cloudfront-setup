@@ -2,14 +2,14 @@
 
 **This repository walks through the implementation of a CDN for an Elastic Beanstalk Application**
 
-## Performance Testing
-A Flask Application hosted in an Elastic Beanstalk was tested for latency performance with Apache JMeter. JMeter can automate requests to an application. In this case JMeter was configured to make http requests to our Elastic Beanstalk application. 
-
-The latency was around 40ms which is not bad, but under increased traffic load this could get noticeably higher.
-
 ## Content Delivery Network
 
 A Content Deliver Network (CDN) is a network of servers strategically placed is geographically diverse location. The network of servers caches copies of content from your service and can serve this content. This reduces that round trip between a user and content from your application.
+
+## Performance Testing
+We tested a Flask Application hosted in an Elastic Beanstalk was tested for latency performance with Apache JMeter. JMeter can automate requests to an application. In this case JMeter was configured to make http requests to our Elastic Beanstalk application. 
+
+The latency was around 40ms which is not bad, but under increased traffic load this could get noticeably higher.
 
 ## Cloudfront
 Cloudfront is a CDN service provided by AWS. Below are steps to set up Cloudfront for an Elastic Beanstalk application. 
